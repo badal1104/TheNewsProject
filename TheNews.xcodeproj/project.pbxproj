@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E02FEB92C197FE500D069E6 /* NewsArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E02FEB82C197FE500D069E6 /* NewsArticleModel.swift */; };
-		0E1E36CB2C1B7C98009C2B0D /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0E1E36CA2C1B7C98009C2B0D /* NukeUI */; };
 		0E72B0C52C23E909000E3D0B /* TheNewsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E72B0C42C23E909000E3D0B /* TheNewsListViewModelTests.swift */; };
 		0E72B0C72C23EBF3000E3D0B /* MockSwiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E72B0C62C23EBF3000E3D0B /* MockSwiftData.swift */; };
 		0EA8CF672C08696400293E8B /* TheNewsMockingNetworkCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8CF662C08696400293E8B /* TheNewsMockingNetworkCallTests.swift */; };
@@ -23,6 +22,7 @@
 		0EBEFC392C28BAFC00BF15EB /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBEFC382C28BAFC00BF15EB /* WebViewModel.swift */; };
 		0EBEFC3B2C28F43300BF15EB /* WebViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBEFC3A2C28F43300BF15EB /* WebViewModelTests.swift */; };
 		0EBEFC3D2C297BE800BF15EB /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBEFC3C2C297BE700BF15EB /* FilterButton.swift */; };
+		0EBEFC402C2A049200BF15EB /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBEFC3F2C2A049200BF15EB /* NukeUI */; };
 		0ECF46312C225A71008F8555 /* SwiftDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECF46302C225A71008F8555 /* SwiftDataManager.swift */; };
 		0ECF463B2C23B180008F8555 /* SwiftDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECF463A2C23B180008F8555 /* SwiftDataManagerTests.swift */; };
 		37B847312C060E270090BFE7 /* TheNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B847302C060E270090BFE7 /* TheNewsApp.swift */; };
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E1E36CB2C1B7C98009C2B0D /* NukeUI in Frameworks */,
+				0EBEFC402C2A049200BF15EB /* NukeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +257,7 @@
 			);
 			name = TheNews;
 			packageProductDependencies = (
-				0E1E36CA2C1B7C98009C2B0D /* NukeUI */,
+				0EBEFC3F2C2A049200BF15EB /* NukeUI */,
 			);
 			productName = TheNews;
 			productReference = 37B8472D2C060E270090BFE7 /* TheNews.app */;
@@ -310,7 +310,7 @@
 			);
 			mainGroup = 37B847242C060E270090BFE7;
 			packageReferences = (
-				0E1E36C92C1B7C98009C2B0D /* XCRemoteSwiftPackageReference "Nuke" */,
+				0EBEFC3E2C2A049200BF15EB /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = 37B8472E2C060E270090BFE7 /* Products */;
 			projectDirPath = "";
@@ -645,20 +645,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0E1E36C92C1B7C98009C2B0D /* XCRemoteSwiftPackageReference "Nuke" */ = {
+		0EBEFC3E2C2A049200BF15EB /* XCRemoteSwiftPackageReference "Nuke" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kean/Nuke";
 			requirement = {
-				kind = exactVersion;
-				version = 12.7.2;
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0E1E36CA2C1B7C98009C2B0D /* NukeUI */ = {
+		0EBEFC3F2C2A049200BF15EB /* NukeUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0E1E36C92C1B7C98009C2B0D /* XCRemoteSwiftPackageReference "Nuke" */;
+			package = 0EBEFC3E2C2A049200BF15EB /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeUI;
 		};
 /* End XCSwiftPackageProductDependency section */
