@@ -2,14 +2,13 @@
 Showing latest new from free News API
 
 # Screenshots
-![Simulator Screenshot - Clone 3 of iPhone 15 Pro - 2024-06-26 at 00 59 54](https://github.com/badal1104/TheNewsProject-main/assets/36571426/e8f4024e-ab57-47ea-9ca9-5735f38f6af6)
-![Simulator Screenshot - Clone 3 of iPhone 15 Pro - 2024-06-26 at 01 02 27](https://github.com/badal1104/TheNewsProject-main/assets/36571426/e95de89d-c56f-45e0-97de-f3f60faef1aa)
-![Simulator Screenshot - Clone 3 of iPhone 15 Pro - 2024-06-26 at 01 01 08](https://github.com/badal1104/TheNewsProject-main/assets/36571426/1f17e90e-8499-4306-b570-06eb00e5b140)
-![Simulator Screenshot - Clone 3 of iPhone 15 Pro - 2024-06-26 at 01 00 35](https://github.com/badal1104/TheNewsProject-main/assets/36571426/ab3e964a-407b-414c-93d6-eb05d7dfcb23)
-![Simulator Screenshot - Clone 3 of iPhone 15 Pro - 2024-06-26 at 01 00 25](https://github.com/badal1104/TheNewsProject-main/assets/36571426/c00cb787-4148-4a54-834c-307f019bda49)
-![Simulator Screenshot - Clone 3 of iPhone 15 Pro - 2024-06-26 at 01 00 11](https://github.com/badal1104/TheNewsProject-main/assets/36571426/4b9f333a-f34b-46cd-85a3-da68b25e08c3)
-![Simulator Screenshot - Clone 3 of iPhone 15 Pro - 2024-06-26 at 01 00 03](https://github.com/badal1104/TheNewsProject-main/assets/36571426/ad020e8b-330a-465b-b461-d84929103bbd)
-
+![ss1](https://github.com/badal1104/TheNewsProject-main/assets/36571426/d10fcd56-7e7b-4450-bd19-7968881b05a1)
+![ss2](https://github.com/badal1104/TheNewsProject-main/assets/36571426/c97491cc-2a73-4acd-85d4-c44702d7b950)
+![ss3](https://github.com/badal1104/TheNewsProject-main/assets/36571426/0e88aff8-1ed2-4fb8-9066-9af9795ef73a)
+![ss4](https://github.com/badal1104/TheNewsProject-main/assets/36571426/899fe9ce-ead0-433e-ae53-ea25ce31348a)
+![ss5](https://github.com/badal1104/TheNewsProject-main/assets/36571426/8fa33691-be00-4304-8d42-d923e139dc70)
+![ss6](https://github.com/badal1104/TheNewsProject-main/assets/36571426/465b59b6-68fa-43f6-b10f-4f358a13e601)
+![ss7](https://github.com/badal1104/TheNewsProject-main/assets/36571426/e4ebd6c8-e06d-4b48-993c-62a6d6f73f85)
 
 
 # UIFlow:
