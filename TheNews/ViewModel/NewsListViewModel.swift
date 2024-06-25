@@ -26,10 +26,6 @@ import SwiftData
     
     func getLatestNews(endPoint: APIEndPointProvider) async {
         isLoading = true
-        defer {
-            isLoading = false
-        }
-        
         do {
             let data: NewsResponse = try await articleService.getLatestNews(endPoint: endPoint)
             let newsArtcileModel = data.transformToNewsArticleModel()
@@ -48,10 +44,12 @@ import SwiftData
     private func assignArticle(_ newsArtcileModel: [NewsArticleModel]) {
         self.article = newsArtcileModel
         self.messageString = ""
+        self.isLoading = false
     }
     
     @MainActor
     private func setErrorMessage(_ errorDescription: String) {
+        self.isLoading = false
         self.messageString = errorDescription
         self.article?.removeAll()
     }
@@ -59,7 +57,7 @@ import SwiftData
     func filterNews(by category: String) {
         if !checkSelectedCategory(category: category) {
             Task {
-                let queryParams = ["country": NewsAppConstant.defaultCountry, "category" : self.selectedCategory]
+                let queryParams = [QueryParamKeys.country: NewsAppConstant.defaultCountry, QueryParamKeys.category : self.selectedCategory]
                 let topHeadlines = APIEndPoints.topHeadlines(urlParameters: queryParams)
                 await self.getLatestNews(endPoint: topHeadlines)
             }

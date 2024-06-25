@@ -14,7 +14,7 @@ struct ArticleDetailsView: View {
     
     var body: some View {
         ZStack  {
-            WebView(url: URL(string: article.url)!, webViewModel: webViewModel)
+            WebView(url: URL(string: article.url), webViewModel: webViewModel)
                 .navigationTitle(NewsAppConstant.detials)
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarItems(trailing: Button(action: {

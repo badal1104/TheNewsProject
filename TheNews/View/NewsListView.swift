@@ -103,7 +103,7 @@ struct NewsListView: View {
     }
     
     private func fetchNews() async {
-        let topHeadlines = APIEndPoints.topHeadlines(urlParameters: ["country": NewsAppConstant.defaultCountry, "category" : newListViewModel.selectedCategory])
+        let topHeadlines = APIEndPoints.topHeadlines(urlParameters: [QueryParamKeys.country: NewsAppConstant.defaultCountry, QueryParamKeys.category : newListViewModel.selectedCategory])
         await newListViewModel.getLatestNews(endPoint: topHeadlines)
     }
 }

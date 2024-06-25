@@ -18,6 +18,7 @@ import Foundation
     var isBookmark = false
     let content: String?
     let source: String
+    
     init(title: String, description: String?, url: String, urlToImage: String?, publishedAt: Date, isBookmark: Bool = false, content: String?, sourceName: String) {
         self.title = title
         self.description = description

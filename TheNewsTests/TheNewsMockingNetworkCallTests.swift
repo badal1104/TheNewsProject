@@ -43,7 +43,7 @@ final class TheNewsTestsMockingNetworkCall: XCTestCase {
             )!
             return (response, mockData)
         }
-        let topHeadlines = APIEndPoints.topHeadlines(urlParameters: ["country": "in"])
+        let topHeadlines = APIEndPoints.topHeadlines(urlParameters: [QueryParamKeys.country: NewsAppConstant.defaultCountry])
         await model?.getLatestNews(endPoint: topHeadlines)
         let data = try XCTUnwrap(model?.article, "Expected response")
         XCTAssertTrue(!data.isEmpty, "Data expected")
@@ -61,7 +61,7 @@ final class TheNewsTestsMockingNetworkCall: XCTestCase {
             )!
             return (response, Data())
         }
-        let topHeadlines = APIEndPoints.topHeadlines(urlParameters: ["country": "in"])
+        let topHeadlines = APIEndPoints.topHeadlines(urlParameters: [QueryParamKeys.country: NewsAppConstant.defaultCountry])
         await model?.getLatestNews(endPoint: topHeadlines)
         let messageString = try XCTUnwrap(model?.messageString, "Expected response")
         XCTAssertFalse(messageString.isEmpty, "Expected response")
@@ -79,7 +79,7 @@ final class TheNewsTestsMockingNetworkCall: XCTestCase {
             )!
             return (response, Data())
         }
-        let topHeadlines = APIEndPoints.topHeadlines(urlParameters: ["country": "in"])
+        let topHeadlines = APIEndPoints.topHeadlines(urlParameters: [QueryParamKeys.country: NewsAppConstant.defaultCountry])
         await model?.getLatestNews(endPoint: topHeadlines)
         let messageString = try XCTUnwrap(model?.messageString, "Expected response")
         XCTAssertFalse(messageString.isEmpty, "Expected response")
@@ -97,7 +97,7 @@ final class TheNewsTestsMockingNetworkCall: XCTestCase {
             )!
             return (response, nil) // Data nil
         }
-        let topHeadlines = APIEndPoints.topHeadlines(urlParameters: ["country": "in"])
+        let topHeadlines = APIEndPoints.topHeadlines(urlParameters: [QueryParamKeys.country: NewsAppConstant.defaultCountry])
         await model?.getLatestNews(endPoint: topHeadlines)
         let messageString = try XCTUnwrap(model?.messageString, "Expected response")
         XCTAssertFalse(messageString.isEmpty, "Expected response")

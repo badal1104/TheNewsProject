@@ -24,6 +24,11 @@ enum Version: String {
     case v2
 }
 
+enum QueryParamKeys {
+    static let country = "country"
+    static let category = "category"
+}
+
 protocol APIEndPointProvider {
     var baseURL: String { get }
     var version: Version { get }

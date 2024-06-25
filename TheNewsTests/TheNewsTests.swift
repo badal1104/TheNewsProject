@@ -20,7 +20,7 @@ final class TheNewsTests: XCTestCase {
     }
 
     func test_Api() async throws {
-        let topHeadlines = APIEndPoints.topHeadlines(urlParameters: ["country": "in"])
+        let topHeadlines = APIEndPoints.topHeadlines(urlParameters: [QueryParamKeys.country: NewsAppConstant.defaultCountry])
          await model?.getLatestNews(endPoint: topHeadlines)
         let data = try XCTUnwrap(model?.article, "Expected response")
         XCTAssertTrue(!data.isEmpty, "Data expected")
