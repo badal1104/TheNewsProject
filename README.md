@@ -25,8 +25,8 @@ TheNewsProject is developed using the MVVM (Model-View-ViewModel) approach, sepa
 
 # UIFlow:
 ![UIFlow](https://github.com/badal1104/TheNewsProject-main/assets/36571426/e7c9549b-f66e-481f-b491-f09b6cdb246f)
-**ArticleCardView** - This view shows the title, description, and image of the news. For image loading, NUKE (https://github.com/kean/Nuke) is used for downloading and caching purposes. While URLCache and NSURLCache can be used, managing them becomes difficult as the project complexity increases. NUKE offers a scalable and stable framework, avoiding the need to reinvent the wheel.
-**ArticleDetailView** - This view opens details of the news in a WKWebView. WKWebView is used because the content in the response is limited text for free APIs, like: **"content":"You may have heard reports in recent days of a flesh-eating bacteria spreading in Japan, referring to an illness that can occur with streptococcal toxic shock syndrome (STSS). \r\nMedia reports indicat…_ [+5501 chars]"_** 
+1) **ArticleCardView** - This view shows the title, description, and image of the news. For image loading, NUKE (https://github.com/kean/Nuke) is used for downloading and caching purposes. While URLCache and NSURLCache can be used, managing them becomes difficult as the project complexity increases. NUKE offers a scalable and stable framework, avoiding the need to reinvent the wheel.
+2) **ArticleDetailView** - This view opens details of the news in a WKWebView. WKWebView is used because the content in the response is limited text for free APIs, like: **"content":"You may have heard reports in recent days of a flesh-eating bacteria spreading in Japan, referring to an illness that can occur with streptococcal toxic shock syndrome (STSS). \r\nMedia reports indicat…_ [+5501 chars]"_** 
 The response also contains the news URL with specific full details, so WKWebView is chosen to show the complete content.
 
 # SequenceDiagram:
