@@ -43,6 +43,14 @@ I used a local array because ideally, there should be an API for bookmarking, an
 # Testing:
 Focus on unit testing, which is done using the XCTest framework. We've achieved good coverage, as shown in the attached figure.
 <img width="1233" alt="Screenshot 2024-06-25 at 6 28 48 PM" src="https://github.com/badal1104/TheNewsProject-main/assets/36571426/da0e4d22-79f7-47cc-bee0-e96f9ad05f4b">
+1) **TheNewsTests** - Calls the live API for testing real-time responses and data handling.
+2) **TheNewsTestsMockingNetworkCallTests** - Mocks the response by creating a class that adopts URLProtocol.
+3) **TheNewsListViewModelTests** - Tests the ViewModel business logic.
+4) **SwiftDataManagerTests** - Tests local database operations for selected news categories.
+5) **WebViewModelTests** - Tests WebViewModel methods.
+6) **MockUrlSessionProtocol** - Mocks URLProtocol for mock responses instead of calling the API on the server.
+7) **MockSwiftData** - Creates ModelContainer for testing purposes instead of directly accessing the app's ModelContainer.
+
 
 # Tools used
 Xcode - 15.3\
