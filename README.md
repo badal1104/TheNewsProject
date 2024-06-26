@@ -28,6 +28,9 @@ TheNewsProject is developed using the MVVM (Model-View-ViewModel) approach, sepa
 1) **ArticleCardView** - This view shows the title, description, and image of the news. For image loading, NUKE (https://github.com/kean/Nuke) is used for downloading and caching purposes. While URLCache and NSURLCache can be used, managing them becomes difficult as the project complexity increases. NUKE offers a scalable and stable framework, avoiding the need to reinvent the wheel.
 2) **ArticleDetailView** - This view opens details of the news in a WKWebView. WKWebView is used because the content in the response is limited text for free APIs, like: **"content":"You may have heard reports in recent days of a flesh-eating bacteria spreading in Japan, referring to an illness that can occur with streptococcal toxic shock syndrome (STSS). \r\nMedia reports indicat…_ [+5501 chars]"_** 
 The response also contains the news URL with specific full details, so WKWebView is chosen to show the complete content.
+3) **BookmarkView** - The bookmarks are displayed in the latest order, meaning the most recent bookmarks will be visible first. The bookmarking data is stored in a local array and will be reset after every relaunch.
+I used a local array because ideally, there should be an API for bookmarking, and while fetching news from the News API, it should indicate the bookmark status (true or false). However, I handled this by adding an isBookmark property in the response. This property is modified and stored whenever the user interacts with the bookmark action.
+
 
 # SequenceDiagram:
 ![SequenceDiagram](https://github.com/badal1104/TheNewsProject-main/assets/36571426/e7d674a5-d3a0-4aaa-96b6-57087ed25b8f)
